@@ -41,17 +41,17 @@ public class OlaMundoServletAtividade extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet OlaMundoServletAtividade</title>");            
+            out.println("<title>Verificador de Maioridade</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet OlaMundoServletAtividade at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Verificador de Maioridade</h1>");
            
             if (idade < 18){
             
-                out.println("<h2>"+ nome +" menor de idade</h2>");
+                out.println("<h2> Olá "+ nome +"<br>Vocé é  menor de idade</h2>");
             
             }else{
-                out.println("<h2>"+ nome +" maior de idade</h2>");
+                out.println("<h2>  Olá "+ nome +"<br>Vocé é maior de idade</h2>");
             }
             out.println("</body>");
             out.println("</html>");
